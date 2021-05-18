@@ -81,7 +81,7 @@ namespace SGRE.TSA.Api.Extensions
             services.AddScoped<IApplicationReasonExternalService, ApplicationReasonExternalService>();
             services.AddScoped<IAepLookupExternalService, AepLookupExternalService>();
 
-            services.AddScoped<IExternalServiceFactory, ExternalServiceFactory>();
+            services.AddSingleton<IExternalServiceFactory, ExternalServiceFactory>();
 
             #endregion
         }
